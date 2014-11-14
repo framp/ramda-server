@@ -6,8 +6,8 @@ require('./lib/ramdaExtra');
 var middlewares = [
   require('./middlewares/objectify'), 
   require('./middlewares/logger'),
-  require('./middlewares/bye'),
-  require('./middlewares/hello')
+  require('./middlewares/hello'),
+  require('./middlewares/404')
 ];
 
 var server = R.apply(R.pipe, middlewares);

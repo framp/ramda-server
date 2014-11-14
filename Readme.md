@@ -26,6 +26,7 @@ I monkeypatched `R` with a couple of functions (available in `lib/ramdaExtra`):
 
  - R.joint: It takes an array of functions and a target function, it executes all the functions and pipe their return values to the target function. It's essential to control the flow (together with R.pipe) as it let you use a value several times
  - R.createObject: It takes an array of keys and an arrays of values and returns an object 
+ - R.createArray: It creates an array out of the arguments passed to the function (like R.of but with multiple parameters)
  
 ##Performance
 Performance are out of scope of the test - and they shouldn't be exciting (probably worse than the node.js hello world). 
